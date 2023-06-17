@@ -1,5 +1,9 @@
 
 function ChangeName() {
 var changeName = document.getElementById("inputtext");
-changeName.value = "I'm Stupid!";
+if (changeName.value != ""){  
+changeName.value = changeName.value + " is Stupid!";
+} else {
+    alert("Enter your name first!");
+}
 }
