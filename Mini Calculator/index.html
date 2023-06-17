@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MC.css">
+    <script src="MC.js"></script>
+    <title>Mini Calculator</title>
+</head>
+<body>
+    <main>
+        <div id="formcontainer">
+        <form id="calculator">
+            <h1>MINI CALCULATOR</h1>
+            <div id="numbers">
+            <label for="num1" class="numslbl">Enter Number 1:</label>
+        <input id="num1" class="nums" type="number" required>
+        <label for="num2" class="numslbl">Enter Number 2:</label>
+        <input id="num2" class="nums" type="number" required>
+        <h3>Calculate by clicking an operator below</h3>
+            </div>
+            <div id="buttons">
+                <button type="button" id="add" onclick="Calculateadd()">+</button>
+                <button type="button" id="subtract" onclick="Calculatesub()">-</button>
+                <button type="button" id="multiply" onclick="Calculatemulti()">x</button>
+                <button type="button" id="divide" onclick="Calculatediv()">/</button>
+                <button type="button" id="remainder" onclick="Calculaterem()">%</button>
+        <label for="result" class="numslbl" >Result:</label>
+        <input id="result" class="nums" type="number" readonly>
+            </div>
+        </form>
+    </div>
+    </main>
+</body>
+</html>
